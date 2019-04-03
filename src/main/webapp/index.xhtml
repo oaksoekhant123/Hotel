@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<ui:composition template="/WEB-INF/template.xhtml">
+	<ui:define name="page-title"><i class="fa fa-bed"></i>ROOM</ui:define>
+	<ui:define name="content">
+		<div class="nav navbar-nav">
+		<h:dataTable styleClass="table table-info" >
+			<h:column>
+				<f:facet name="header">ID</f:facet>
+				</h:column>
+			  
+			  <h:column>
+				<f:facet name="header">Room Number</f:facet>
+			</h:column>
+			
+			<h:column>
+				<f:facet name="header">Bed</f:facet>
+			</h:column>
+		</h:dataTable>
+	
+		</div>
+	</ui:define>
+	</ui:composition>
+</html>
